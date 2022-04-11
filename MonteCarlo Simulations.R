@@ -29,18 +29,6 @@ montecarlo_c <- function(n) {
   under  <- which( y*(x+1) <= 1)
   no = length(under)
   
-  rez1  <- no / n
+  rez  <- no / n
   
-  return(rez1)
-}
-
-edrv <- function(l) {
-  u <- runif(1)
-  rez = -(log(1-u))
   return(rez)
-}
-
-exporential <- function(n,l) {
-  x = (-1/l) * sum(runif(n))
-  return(x)
-}
