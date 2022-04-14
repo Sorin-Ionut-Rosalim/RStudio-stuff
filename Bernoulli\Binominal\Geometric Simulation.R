@@ -19,7 +19,7 @@ binomial <- function(n,p){
   i = 0
   while(s<=u){
     i = i + 1
-    s = s + ((1-p) ^ (n-1)) * p^i * dim(combinations(n,i))[1]
+    s = s + ((1-p) ^ (n-i)) * p^i * dim(combinations(n,i))[1]
   }
   return(i)
 }
